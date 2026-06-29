@@ -288,7 +288,8 @@ test_that("Pool (Rubin) works as expected when se = NA in analysis model", {
             est = real_mu,
             ci = as.numeric(c(NA, NA)),
             se = as.numeric(NA),
-            pvalue = as.numeric(NA)
+            pvalue = as.numeric(NA),
+            df = as.numeric(NA)
         ),
         tolerance = 1e-2
     )
@@ -299,7 +300,8 @@ test_that("Pool (Rubin) works as expected when se = NA in analysis model", {
             est = real_mu,
             ci = as.numeric(c(NA, NA)),
             se = as.numeric(NA),
-            pvalue = as.numeric(NA)
+            pvalue = as.numeric(NA),
+            df = as.numeric(NA)
         ),
         tolerance = 1e-2
     )
@@ -310,7 +312,8 @@ test_that("Pool (Rubin) works as expected when se = NA in analysis model", {
             est = real_mu,
             ci = as.numeric(c(NA, NA)),
             se = as.numeric(NA),
-            pvalue = as.numeric(NA)
+            pvalue = as.numeric(NA),
+            df = as.numeric(NA)
         ),
         tolerance = 1e-2
     )
@@ -336,7 +339,8 @@ test_that("Pool (Rubin) works as expected when se = NA in analysis model", {
             est = real_mu,
             ci = as.numeric(c(NA, NA)),
             se = as.numeric(NA),
-            pvalue = as.numeric(NA)
+            pvalue = as.numeric(NA),
+            df = as.numeric(NA)
         ),
         tolerance = 1e-2
     )
@@ -347,7 +351,8 @@ test_that("Pool (Rubin) works as expected when se = NA in analysis model", {
             est = real_mu,
             ci = as.numeric(c(NA, NA)),
             se = as.numeric(NA),
-            pvalue = as.numeric(NA)
+            pvalue = as.numeric(NA),
+            df = as.numeric(NA)
         ),
         tolerance = 1e-2
     )
@@ -358,7 +363,8 @@ test_that("Pool (Rubin) works as expected when se = NA in analysis model", {
             est = real_mu,
             ci = as.numeric(c(NA, NA)),
             se = as.numeric(NA),
-            pvalue = as.numeric(NA)
+            pvalue = as.numeric(NA),
+            df = as.numeric(NA)
         ),
         tolerance = 1e-2
     )
