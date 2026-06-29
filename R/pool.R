@@ -267,6 +267,7 @@ pool_internal.jackknife <- function(
     N_jack <- length(ests_jack)
     se_jack <- sqrt(((N_jack - 1) / N_jack) * sum((ests_jack - mean_jack)^2))
     ret <- parametric_ci(est_point, se_jack, alpha, alternative, qnorm, pnorm)
+    ret$df <- NA_real_
     return(ret)
 }
 
@@ -289,6 +290,7 @@ pool_internal.bootstrap <- function(
     )
 
     ret <- bootfun(results$est, conf.level, alternative)
+    ret$df <- NA_real_
     return(ret)
 }
 
@@ -318,6 +320,7 @@ pool_internal.bmlmi <- function(
         pfun = pt,
         df = pooled_est$df
     )
+    ret$df <- pooled_est$df
 
     return(ret)
 }
@@ -580,8 +583,8 @@ rubin_rules <- function(
         return(
             list(
                 est_point = est_point,
-                var_t = NA,
-                df = NA
+                var_t = NA_real_,
+                df = NA_real_
             )
         )
     }
