@@ -424,6 +424,8 @@ test_that("pool_internal.rubin passes on the Rubin method", {
 
     expect_equal(modern$se, sqrt(modern_rules$var_t))
     expect_equal(original$se, sqrt(original_rules$var_t))
+    expect_equal(modern$df, modern_rules$df)
+    expect_equal(original$df, original_rules$df)
     expect_equal(
         modern$ci,
         modern$est + c(-1, 1) * qt(0.975, modern_rules$df) * modern$se
