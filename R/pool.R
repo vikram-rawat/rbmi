@@ -951,6 +951,7 @@ print.pool <- function(x, ...) {
                 "parameter",
                 "est",
                 "se",
+                "df",
                 "lci",
                 "uci",
                 "pval"
